@@ -6,10 +6,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Employee Payroll Form</title>
-    <link rel="stylesheet" href="../css/form.css">
+    <link rel="stylesheet" href="../css/Form.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;600&display=swap">
     <script type="text/JavaScript" src="../js/FormValidation.js"></script>
-    <script type="text/JavaScript" src="../js/EmployeePayrollData.js"></script>
+    <script type="text/JavaScript" src="../js/EmployeePayrollDB.js"></script>
+    <script type="text/JavaScript" src="../js/SiteProperties.js"></script>
+    <script type="text/JavaScript" src="../js/Utility.js"></script>
 </head>
 
 <body>
@@ -25,7 +27,7 @@
     </header>
     <!-- UC2 Form with header and name-->
     <div class="form-content">
-        <form class="form" action="#" onsubmit="save();return false">
+        <form class="form" action="#" onsubmit="save(event);return false">
             <div class="form-head">
                 Employee Payroll form
             </div>
@@ -161,7 +163,7 @@
                 <textarea id="notes" class="input" name="Notes" placeholder="" style="height: 100px;"></textarea>
             </div>
             <div class="buttonParent">
-                <a href="./Home.html" class="resetButton button cancelButton">Cancel</a>
+                <a href="../html/Home.html" class="resetButton button cancelButton">Cancel</a>
                 <div class="submit-reset">
                     <button type="submit" class="button submitButton" id="submitButton">Submit</button>
                     <button type="reset" class="resetButton button">Reset</button>
